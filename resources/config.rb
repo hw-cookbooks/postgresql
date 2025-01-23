@@ -48,7 +48,7 @@ property :external_pid_file, String,
 
 property :server_config, Hash,
           default: {},
-          coerce: proc { |p| p.deep_sort },
+          coerce: proc { |p| p.transform_keys(&:to_s).deep_sort },
           description: 'PostgreSQL server configuration options'
 
 load_current_value do |new_resource|
