@@ -4,6 +4,8 @@ This file is used to list changes made in the last 3 major versions of the postg
 
 ## Unreleased
 
+- Cast `server_config` keys to strings in `postgresql_config` to avoid unnecessary converges
+
 ## 12.0.3 - *2024-12-30*
 
 - Bump version to force supermarket release
